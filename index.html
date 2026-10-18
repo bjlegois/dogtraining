@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>OpenLeash — free dog training</title>
+  <meta name="description" content="Free, reward-based dog training. Step-by-step programs, a clicker, a whistle and a training log. No account, no paywall.">
+  <meta name="theme-color" content="#EDF1EC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0D1613" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="OpenLeash">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <nav id="tabbar" class="tabbar" aria-label="Main">
+    <a href="#/today" data-tab="today" class="tab">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-5.5h-5V21H5a1 1 0 0 1-1-1z"/></svg>
+      <span>Today</span>
+    </a>
+    <a href="#/programs" data-tab="programs" class="tab">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h9.5a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h9.5"/><path d="M9 8.5h5"/></svg>
+      <span>Programs</span>
+    </a>
+    <a href="#/tools" data-tab="tools" class="tab">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="5"/><circle cx="12" cy="12" r="3.2"/></svg>
+      <span>Tools</span>
+    </a>
+    <a href="#/log" data-tab="log" class="tab">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 9.5h16M8.5 3v4M15.5 3v4"/><path d="m9 14.5 2 2 4-4"/></svg>
+      <span>Log</span>
+    </a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p style="padding:24px;font:18px system-ui">OpenLeash needs JavaScript turned on.</p>
+  </noscript>
+
+  <script src="content/programs.js"></script>
+  <script src="content/guides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
